@@ -1,0 +1,57 @@
+<html>
+    <head>
+      <title> Pizza Calculator </title>
+      <style type="text/css">
+         body{
+         background-image: url(pizza-background.jpeg);
+         background-size: cover;
+         font-size: 250%;
+         font-style: italic;
+         font-weight: bolder;
+         text-align: left;
+         color: white;
+      }
+        hr {
+            height: 5px;
+            color: black;
+            background-color: black;
+            border: none;
+            margin-left:0;
+            width: 400px;
+          }
+        
+       </style>
+    </head>
+    <body>
+      <script>
+        //Hierboven staat een css bestand waar ik de achtergrond, text, hr line en title in staan.
+
+        //Dit zijn de vragen van hoeveel pizza's je wil bestellen in welke grootte
+        var V_small = prompt("Hoeveel small pizza's wil je? [ \u20AC 5.99] " )
+        var V_medium = prompt("Hoeveel medium pizza's wil je? [ \u20AC 8.49] " )
+        var V_large = prompt("Hoeveel large pizza's wil je? [ \u20AC 14.49]" )
+        
+        //Dit zijn de prijzen van de pizza's
+        const C_small = 5.99;
+        const C_medium = 8.49;
+        const C_large = 14.49;
+
+        //Hier zet hij in je beeld wat de prijzen zijn van alle size's apart bij elkaar opgetelt.
+        //Dus hij maakt hier ook gelijk een brekening
+        document.write ('Receipt')
+        document.write ('<br><br>Small Amount: ' + V_small )
+        document.write ('<br>Prize Small: &euro;'+ V_small * C_small )
+        document.write ('<br><br>Medium Amount: ' + V_medium )
+        document.write ('<br>Prize Medium: &euro; ' + V_medium * C_medium )
+        document.write ('<br><br>Large Amount: ' + V_large )
+        document.write ('<br>Prize Large: &euro; ' + V_large * C_large )
+
+        //Hier maakt hij een totale optel van alle pizza's samen en zet hij het op je scherm
+        var V_total = V_large * C_large + V_medium * C_medium + V_small * C_small; 
+        V_total = V_total.toFixed(2);
+        document.write ('<hr>Total: &euro; ' + V_total )
+
+        
+      </script>
+    </body>
+</html>
