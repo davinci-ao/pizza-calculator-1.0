@@ -1,0 +1,53 @@
+<html>
+	<body>
+		<h2 align='center'>Pizza Calculator 1.0</h2>
+		<script type= "text/javascript">
+		//Zi Yang Zhao Applicatieontwikkelaar\\
+
+		var linebreak = "<br />"; //linebreak zorgt ervoor dat het systeem door gaat op de volgende regel.\\
+
+		var small = prompt ('Hoeveel small pizzas wilt u? Per pizza €2,99'); 
+		var medium = prompt ('Hoeveel medium pizzas wilt u? Per pizza €5,99');
+		var large = prompt ('Hoeveel large pizzas wilt u? Per pizza €11,99');
+		
+		//prompt zorgt ervoor dat een er een pop-up bericht komt met text waardoor de gebruiker tekst kan invoeren.\\
+		
+		const SMALLPRICE = 299 / 100;
+		const MEDIUMPRICE = 599 / 100;
+		const LARGEPRICE = 1199 / 100;
+
+		//const geeft aan dat het niet veranderd kan worden.\\
+
+		var bedragSMALL = small * SMALLPRICE;
+		var bedragMEDIUM = medium * MEDIUMPRICE;
+		var bedragLARGE = large * LARGEPRICE;
+
+		//var is datgene dat steeds veranderd kan worden.\\
+
+		document.write('Aantal Small pizza\'s besteld = ');
+		document.write(small + linebreak);
+		document.write(small + ' x ' + SMALLPRICE + ' = ');
+		document.write('€' + bedragSMALL + linebreak);
+		document.write(linebreak);
+		document.write(linebreak);
+
+		document.write('Aantal Medium pizza\'s besteld = ');
+		document.write(medium + linebreak);
+		document.write(medium + ' x ' + MEDIUMPRICE + ' = ');
+		document.write('€' + bedragMEDIUM + linebreak );
+		document.write(linebreak);		
+
+		document.write('Aantal Large pizza\'s besteld = ');
+		document.write(large + linebreak);
+		document.write(large + ' x ' + LARGEPRICE + ' = ');
+		document.write('€' + bedragLARGE + linebreak );
+		document.write(linebreak);
+
+		document.write('Totaalprijs van alle pizza\'s = € ');
+		document.write(bedragSMALL + bedragMEDIUM + bedragLARGE);
+
+		//document.write is het keyword voor het systeem om dingen erin te zetten. Als je geen document.write gebruikt voordat je iets intypt, dan zal het systeem er niks mee doen.\\
+
+		</script>
+	</body>
+</html>
