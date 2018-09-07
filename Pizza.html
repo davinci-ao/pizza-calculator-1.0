@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<script>
+			//Eduard Wille 99051422 Da Vinci
+			//Pizza Calculator
+		</script>
+		<title>http://www.MyOwnPizzaCalculator.com</title>
+			<div>
+			
+			<script>
+				//(In body{)Hieronder zie je een style opener dit zorgt er gewoon voor dat het html bestand weet dat dat stukje css is.
+					//Verder staat hier een paar dingen die het font van de pagina veranderen zoals het font zelf de dikheid en kleur.
+
+				//(In hr{)Alles wat in het hr stukje staat zorgt gewoon zodat de hr niet een heel dun balkje is.
+			</script>
+			<style type="text/css">
+				body{
+					font-family:georgia;
+					font-weight:bolder;
+					color:white;
+					background:url(PizzaCBG.PNG) no-repeat center center fixed;
+					font-size:180%;
+				}
+				hr{
+					background-color:white;
+					margin-left:0;
+					width:600px;
+					border:none;
+				}
+			</style>
+
+		<h1>Pizza Bestelling</h1>
+	</head>
+
+	<body>
+		<script>
+			//Dit zijn de prompt pop-ups die de vragen stellen.
+			var SmallpizzaAmount = prompt("Hoeveel kleine pizza's wilt u?(Een kleine pizza is €8,-)");
+			var MediumpizzaAmount = prompt("Hoeveel medium pizza's wilt u?(Een medium pizza is €10,-)");
+			var LargepizzaAmount = prompt("Hoeveel grote pizza's wilt u?(Een grote pizza is €12,-)");
+
+			//Dit zijn de constanten die de prijzen onthouden.
+			const SizeSmall =8;
+			const SizeMedium =10;
+			const SizeLarge =12;
+			//Dit de string die de prijzen plus het aantal optelt.
+			var totaal =(SizeSmall*SmallpizzaAmount + SizeMedium*MediumpizzaAmount + SizeLarge*LargepizzaAmount);
+
+			//Dit zijn de zinnen die uiteindelijk op het scherm komen als je de prompts hebt beantwoord.
+			document.write("Het aantal kleine pizza('s):" + ' ' + SmallpizzaAmount)
+			document.write("<br>Prijs voor de kleine pizza('s):" + ' ' + '€' + SmallpizzaAmount * SizeSmall + ',-');
+			
+			document.write('<br>')
+
+			document.write("<br>Het aantal medium pizza('s):" + ' ' + MediumpizzaAmount)
+			document.write("<br>Prijs voor de medium pizza('s):" + ' ' + '€' + MediumpizzaAmount * SizeMedium + ',-');
+			
+			document.write(' <br>')
+
+			document.write("<br>Het aantal large pizza('s):" + ' ' + LargepizzaAmount)
+			document.write("<br>Prijs voor de grote pizza('s):" + ' ' + '€' + LargepizzaAmount * SizeLarge + ',-');
+
+			//Dit is een hr dit betekend dat er simpelweg een lijn tussen het bedrag met grootte erbij en het totaal antwoord.
+			document.write('<hr size="5">');
+			
+			//Dit het laatste beetje code die het totaal bedrag uitrekent.
+			document.write('Totaal =' + ' ' + '€' + totaal + ',-')
+		</script>
+	</body>
+</html
