@@ -5,8 +5,8 @@ const MEDIUM = 3.23;
 const LARGE = 4.55;
 
 var pizza_s = prompt("Hoeveel kleine pizza's wilt u?"); //vraag naar hoeveelheid small pizza's
-var pizza_m = prompt("Hoeveel kleine pizza's wilt u?"); //vraag naar hoeveelheid medium pizza's
-var pizza_l = prompt("Hoeveel kleine pizza's wilt u?"); //vraag naar hoeveelheid large pizza's
+var pizza_m = prompt("Hoeveel medium pizza's wilt u?"); //vraag naar hoeveelheid medium pizza's
+var pizza_l = prompt("Hoeveel large pizza's wilt u?"); //vraag naar hoeveelheid large pizza's
 
 var cost_s = pizza_s * SMALL; //bereken totaal small pizza's
 var cost_m = pizza_m * MEDIUM; //bereken totaal medium pizza's
