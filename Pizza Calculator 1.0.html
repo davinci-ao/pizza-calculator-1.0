@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <title>Pizza Calculator 1.0</title>
+</head>
+<body>
+  <h1>Pizza Calculator 1.0</h1>
+  <script> //Danny van der Weijde opdracht: pizza calculator.
+  	const SMALL = 399;
+ 	  const MEDIUM = 699; 
+  	const LARGE = 1199;
+  		//Deze const zorgen ervoor dat je de bedragen vast hebt staan en dat je ze makkelijk kan gebruiken.
+
+  	var small = prompt ('Hoeveel small pizza zou u graag willen bestellen?');
+  	var medium = prompt ('Hoeveel medium pizza zou u graag willen bestellen?');
+  	var large = prompt ('Hoeveel large pizza zou u graag willen bestellen?');
+  		//Dit zijn de vragen die de persoon die op de website komt moet beantwoorden. Doormiddel van de prompt slaat hij ook het antwoord op en rekent het systeem daar later mee verder.
+
+  	var pricesmall = SMALL * small / 100;
+  	var pricegmedium = MEDIUM * medium / 100;
+  	var pricelarge = LARGE * large / 100;
+  		//Dit zijn de sommen om het bedrag uit te reken van hoeveel ze er van elke soort hebben en hoeveel die per soort bij elkaar kosten.
+
+  	document.write ('Aantal small pizza\'s besteld. = ');
+  	document.write (small + '<br />');
+  	document.write (small + ' x ' + ' €' + SMALL / 100 + ' =');
+  	document.write (' €' + SMALL * small / 100 + '<br /><br />');
+  		//Dit laat het aantal small pizza's zien die ze besteld hebben en hoeveel die pizza's bij elkaar kosten.
+
+  	document.write ('Aantal medium pizza\'s besteld. = ');
+  	document.write (medium + '<br />');
+  	document.write (medium + ' x ' + ' €' + MEDIUM / 100 + ' = ');
+  	document.write (' €' + MEDIUM * medium / 100 + '<br /><br />');
+  		//Dit laat het aantal medium pizza's zien die ze besteld hebben en hoeveel die pizza's bij elkaar kosten.
+
+  	document.write ('Aantal large pizza\'s besteld. = ');
+  	document.write (large + '<br />');
+  	document.write (large + ' x ' + ' €' + LARGE / 100  + ' = ');
+  	document.write (' €' + LARGE * large / 100 + '<br /><br />');
+  		//Dit laat het aantal large pizza's zien die ze besteld hebben en hoeveel die pizza's bij elkaar kosten.
+
+  	document.write ('Totaal bedrag. = ');
+  	document.write (' €'); 
+  	document.write (pricesmall + pricegmedium + pricelarge);
+  		//Dit laat het eindbedrag zien.
+  </script>
+ </body>
+</html>
