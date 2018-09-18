@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <title>Lab 3 - operatoren</title>
+</head>
+<body>
+  <h1>Lab 3 - operatoren</h1>
+  <script> 
+  	var tafel = (6)
+  	var tafel2 = (3)
+  	document.write(tafel * 1+'<br /> ')
+  	document.write(tafel * 2+'<br /> ')
+  	document.write(tafel * 3+'<br /> ')
+  	document.write(tafel * 4+'<br /> ')
+  	document.write(tafel * 5+'<br /> ')
+  	document.write(tafel * 6+'<br /> ')
+  	document.write(tafel * 7+'<br /> ')
+  	document.write(tafel * 8+'<br /> ')
+  	document.write(tafel * 9+'<br /> ')
+  	document.write(tafel * 10+'<br /><br />')
+  	document.write(tafel2 * 1+'<br /> ')
+  	document.write(tafel2 * 2+'<br /> ')
+  	document.write(tafel2 * 3+'<br /> ')
+  	document.write(tafel2 * 4+'<br /> ')
+  	document.write(tafel2 * 5+'<br /> ')
+  	document.write(tafel2 * 6+'<br /> ')
+  	document.write(tafel2 * 7+'<br /> ')
+  	document.write(tafel2 * 8+'<br /> ')
+  	document.write(tafel2 * 9+'<br /> ')
+  	document.write(tafel2 * 10+'<br /><br />')
+  	//antwoord op de vraag: je laat eerst een popup komen als iemand op de website komt. Deze popup vraagt dan welke tafel de persoon wilt zien en laat die dan ook zie doormiddel van var.
+
+  	var getal = 12;
+  	var antwoord = getal + 6;
+  	document.write ( getal + ' + 6 = ' + antwoord + '<br />');
+  	var antwoord2 = antwoord * 10;
+  	document.write ( antwoord + ' * 10 = ' + antwoord2 + '<br />');
+  	var antwoord3 = antwoord2 /5;
+  	document.write ( antwoord2 + ' / 5 = ' + antwoord3 + '<br />');
+  	var antwoord4 = antwoord3 -12;
+  	document.write ( antwoord3 + ' - 12 = ' + antwoord4 + '<br /><br />');
+
+  	var gekozengetal = prompt ('Voer een getal in');
+  	var gekozengetal2 = parseFloat (gekozengetal)
+  	var gegevenantwoord = gekozengetal2 + 6;
+  	document.write ( gekozengetal2 + ' + 6 = ' + gegevenantwoord + '<br />');
+  	var gegevenantwoord2 = gegevenantwoord * 10;
+  	document.write ( gegevenantwoord + ' * 10 = ' + gegevenantwoord2 + '<br />');
+  	var gegevenantwoord3 = gegevenantwoord2 /5;
+  	document.write ( gegevenantwoord2 + ' / 5 = ' + gegevenantwoord3 + '<br />');
+  	var gegevenantwoord4 = gegevenantwoord3 -12;
+  	document.write ( gegevenantwoord3 + ' - 12 = ' + gegevenantwoord4 + '<br />');
+  	//Hij plakt de getallen bij de eerste aan elkaar waardoor alle antwoorden niet kloppen.
+  	//Doormiddel van een parseFloat zorgt het programma er voor dat het van text naar een getal omzet, waardoor hij ze nu wel goed berekend.
+  </script>
+ </body>
+</html>
